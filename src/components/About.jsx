@@ -18,7 +18,7 @@ function About() {
           <div className="col-lg-4">
             <img
               src="../src/assets/img/my-profile-img.jpg"
-              className="img-fluid w-100 h-100"
+              className="img-fluid w-100 h-100 rounded-4"
               alt=""
             />
           </div>

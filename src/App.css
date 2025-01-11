@@ -75,7 +75,7 @@
   margin-top: 10px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 110px;
+  margin-bottom: 200px;
 
 }
 .section-title{
@@ -102,4 +102,39 @@
 }
 .section-cont p{
   margin-top: 20px;
+}
+
+
+/* stats-section */
+.stats-icons{
+  color: rgb(65 174 174);
+  font-size: 44px;
+  display: block;
+  float: left;
+  line-height: 0;
+}
+.purecounter{
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 60px;
+  line-height: 40px;
+}
+.stats-item p{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 60px;
+  font-size: 15px;
+
+/* text-wrap: wrap; */
+}
+.stats-item p {
+  color: #2c2b2b;
+  font-weight: 600;
+}
+.stats-item p span{
+  color: #c5c3c3;
+}
+.container .row div{
+  margin-bottom: 35px;
 }
