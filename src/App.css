@@ -103,7 +103,12 @@
 .section-cont p{
   margin-top: 20px;
 }
-
+@media screen and (max-width:992px) {
+  .about-content ul{
+   margin-bottom: 0;
+  }
+  
+}
 
 /* stats-section */
 .stats-icons{
@@ -126,7 +131,7 @@
   margin: 15px 0 0 60px;
   font-size: 15px;
 
-/* text-wrap: wrap; */
+
 }
 .stats-item p {
   color: #2c2b2b;
@@ -137,4 +142,80 @@
 }
 .container .row div{
   margin-bottom: 35px;
+}
+
+
+/* Skills section  */
+
+.skills{
+  position: relative;
+  top: 70px;
+  left: 0;
+  margin-top: 10px;
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  margin-bottom: 100px;
+  background-color: #f4fafd;
+
+}
+.skill-cont{
+  padding-block: 35px;
+  margin-top: -40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.skill-cont h2{
+  position: relative;
+}
+.skill-cont h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(10, 169, 231);
+  left: 0;
+  bottom: 0;
+ 
+}
+.skill-title{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  
+  
+}
+.skills-list{
+  padding: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width:992px) {
+  .skills-content{
+    display: block;
+  }
+}
+
+/* Progress bar  */
+.container-bar {
+  border-radius: 10px;
+  height: 20px;
+  background-color: rgb(190, 189, 189);
+}
+
+/* .barCompleted {
+  border-radius: 10px;
+  height: 20px;
+  text-align: end;
+  background-color: rgb(30, 109, 184);
+  width: 80%;
+} */
+
+.label {
+  padding-right: 20px;
+  font-size: 15px;
+  color: rgb(193, 209, 193);
 }
