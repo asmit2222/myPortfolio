@@ -143,7 +143,9 @@
 .container .row div{
   margin-bottom: 35px;
 }
-
+.stats .container{
+  max-width: 90%;
+}
 
 /* Skills section  */
 
@@ -218,4 +220,91 @@
   padding-right: 20px;
   font-size: 15px;
   color: rgb(193, 209, 193);
+}
+
+
+/* Resume section  */
+
+
+.resume{
+  position: relative;
+  top: 70px;
+  left: 0;
+  margin-top: 10px;
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  margin-bottom: 100px;
+ 
+
+}
+.resume-cont{
+  padding-block: 35px;
+  margin-top: -40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.resume-cont h2{
+  position: relative;
+}
+.resume-cont h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(10, 169, 231);
+  left: 0;
+  bottom: 0;
+ 
+}
+.resume-head{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px; 
+}
+
+.resume .resume-title {
+  color: rgb(3, 3, 3);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgb(157, 200, 238);
+  position: relative;
+}
+
+.resume .resume-item::before {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: rgb(157, 200, 238);
+  border: 2px solid rgb(10, 169, 231);
+}
+
+.resume .container{
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 95%;
+}
+.resume .container .row div {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:992px) {
+  .resume .container{
+    
+    max-width: 87%;
+  }
+  
 }

@@ -23,6 +23,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
@@ -35,6 +36,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
@@ -47,6 +49,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
@@ -61,6 +64,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
@@ -73,6 +77,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
@@ -85,6 +90,7 @@ function Skills() {
                   className="wrapper"
                   barContainerClassName="container-bar"
                   labelClassName="label"
+                  animateOnRender
                 />
               </div>
             </div>
