@@ -11,12 +11,13 @@ import {
 
 function Home() {
   return (
-    <section className="bg-container">
+    <section className="bg-container" id="home">
       <div className="hero">
         <img
           className="w-100 vh-100 hero-img"
-          src="../src/assets/img/hero-bg.jpg"
-          alt=""
+          src="/img/hero-bg.jpg"
+          alt="Hero"
+          loading="lazy"
         />
       </div>
       <div className="content">

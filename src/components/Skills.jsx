@@ -1,9 +1,15 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills() {
   return (
-    <section id="skills" className="skills section light-background">
+    <section
+      id="skills"
+      className="skills section light-background"
+      data-aos="fade-up"
+    >
       <div className="skill-cont">
         <h2 className="skill-title">Skills</h2>
         <p>

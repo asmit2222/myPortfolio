@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { Link } from "react-scroll";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/js/bootstrap.bundle.min"; // Import Bootstrap JS
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function Navbar() {
+  const offcanvasRef = useRef(null);
+
+  const closeOffcanvas = () => {
+    const offcanvasElement = offcanvasRef.current;
+    if (offcanvasElement) {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      bsOffcanvas && bsOffcanvas.hide();
+    }
+  };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -8,8 +30,9 @@ function Navbar() {
           <a className="navbar-brand" href="#">
             <img
               className="rounded-circle logo-image"
-              src="../src/assets/img/my-profile-img.jpg"
-              alt=""
+              src="/img/my-profile-img.jpg"
+              alt="Profile Image"
+              loading="lazy"
             />
           </a>
           <button
@@ -27,6 +50,7 @@ function Navbar() {
             tabIndex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
+            ref={offcanvasRef}
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
@@ -41,30 +65,75 @@ function Navbar() {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li className="nav-item ">
-                  <a className="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <Link
+                    to="home"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li className="nav-item ">
-                  <a className="nav-link" href="#">
+                <li className="nav-item" data-aos="fade-up">
+                  <Link
+                    to="about"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
+                <li className="nav-item" data-aos="fade-left">
+                  <Link
+                    to="resume"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     Resume
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Portolio
-                  </a>
+                  <Link
+                    to="portfolio"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link pointer"
+                    onClick={closeOffcanvas}
+                  >
+                    Portfolio
+                  </Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
+                <li className="nav-item" data-aos="fade-up">
+                  <Link
+                    to="services"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -98,9 +167,18 @@ function Navbar() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Services
-                  </a>
+                  <Link
+                    to="contact"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>

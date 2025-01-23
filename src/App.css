@@ -2,7 +2,9 @@
   width: 35px;
   height: 35px;
 }
-
+.nav-link{
+  cursor: pointer;
+}
 
 /* Home section */
 .hero-img{
@@ -140,7 +142,7 @@
 .stats-item p span{
   color: #c5c3c3;
 }
-.container .row div{
+.skills-list .row div{
   margin-bottom: 35px;
 }
 .stats .container{
@@ -309,6 +311,102 @@
   
 }
 
+/* Portfolio section  */
+.portfolio{
+  position: relative;
+  top: 70px;
+  left: 0;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  background-color: #f4fafd;
+
+}
+.portfolio-cont{
+  padding-block: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.portfolio-cont h2{
+  position: relative;
+}
+.portfolio-cont h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(10, 169, 231);
+  left: 0;
+  bottom: 0;
+ 
+}
+.portfolio-head{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px; 
+}
+
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.portfolio-wrap img {
+  transition: 0.3s;
+}
+
+.portfolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-info h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.portfolio-links {
+  margin-top: 15px;
+}
+
+.portfolio-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.portfolio-links a:hover {
+  color: #007bff;
+}
+
+
 
 /* Services section  */
 .services{
@@ -475,3 +573,96 @@
     height: 180px;
   }
 } */
+
+/* Contact section */
+
+.contact{
+  position: relative;
+
+  left: 0;
+  margin-top: 10px;
+  margin-bottom: 100px;
+
+
+}
+.contact-cont{
+  padding-block: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contact-cont h2{
+  position: relative;
+}
+.contact-cont h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(10, 169, 231);
+  left: 0;
+  bottom: 0;
+ 
+}
+.contact-head{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px; 
+}
+
+.contact .info-item .icon {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid rgb(10, 169, 231);
+  margin-right: 20px;
+}
+
+
+.contact .info-item:hover .icon{
+  transition: all 0.5s ease-in;
+  
+    background: rgb(10, 169, 231);
+}
+.contact .info-item:hover a{
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.contact .info-item:hover .icon .bi {
+   transition: 0.5s;
+   color: rgb(255, 255, 255);
+}
+
+.contact .info-item .icon .bi {
+  color: rgb(10, 169, 231);
+  font-size: 24px;
+  line-height: 0;
+}
+
+.contact .info-item{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact button{
+  color: white;
+  background: rgb(10, 169, 231);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+/* Footer section  */
+
+.footer{
+    background-color: #f4fafd;
+    font-size: 14px;
+    padding: 40px 0;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../assets/data/TestemonialData";
+import data from "/assets/data/TestemonialData";
 // import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";

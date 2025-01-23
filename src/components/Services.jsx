@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBriefcase, FaBinoculars, FaCalendar } from "react-icons/fa";
 import { BsCardChecklist } from "react-icons/bs";
 import { MdBarChart, MdBrightness5 } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
   return (
-    <section id="services" className="services section">
+    <section id="services" className="services section" data-aos="fade-up">
       <div className="services-cont">
         <h2 className="services-head">Services</h2>
         <p>
@@ -16,7 +18,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 service-item d-flex ">
             <div className="icon flex-shrink-0">

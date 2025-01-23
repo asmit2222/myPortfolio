@@ -3,6 +3,8 @@ import { IoMdHappy, IoIosJournal, IoMdPeople } from "react-icons/io";
 import { MdHeadsetMic } from "react-icons/md";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Stats() {
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.5 });
   const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.5 });
@@ -10,7 +12,7 @@ function Stats() {
   const [ref4, inView4] = useInView({ triggerOnce: true, threshold: 0.5 });
 
   return (
-    <section id="stats" className="stats section mt-5">
+    <section id="stats" className="stats section mt-5" data-aos="fade-up">
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-3 col-md-6">

@@ -1,8 +1,9 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Resume() {
   return (
-    <section id="resume" className="resume section">
+    <section id="resume" className="resume section" data-aos="fade-up">
       <div className="resume-cont">
         <h2 className="resume-head">Resume</h2>
         <p>
