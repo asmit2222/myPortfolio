@@ -464,10 +464,10 @@
   border: 1px solid rgb(10, 169, 231);
   margin-right: 20px;
 }
-
+/* 
 .services .service-item:hover{
   cursor: pointer;
-}
+} */
 .services .service-item:hover .icon{
   transition: all 0.5s ease-in;
   
@@ -665,4 +665,42 @@
     background-color: #f4fafd;
     font-size: 14px;
     padding: 40px 0;
+}
+
+
+
+
+/* Service details */
+.service-details .services-list{
+  display: flex;
+  flex-direction: column;
+  
+}
+.services-list a{
+   text-decoration: none;
+   font-size: 20px;
+   margin-bottom: 10px;
+   font-weight: 700;
+   color: #91bdec;
+}
+.serviceDetailNav{
+  background-color: #040b14;
+  color: #fff;
+  margin-bottom: 35px;
+}
+/* .serviceDetailNav .breadcrumbs{
+
+ 
+} */
+.serviceDetailNav ul{
+  list-style: none;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.serviceDetailNav li{
+
+  margin-inline: 10px;
 }

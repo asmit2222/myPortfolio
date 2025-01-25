@@ -35,19 +35,19 @@ function Home() {
           </span>
         </h3>
         <div className="social mt-5 d-flex justify-between">
-          <a href="">
+          <a href="/">
             <FaLinkedin className="w-100 h-100" />
           </a>
-          <a href="">
+          <a href="/">
             <FaInstagram className="w-100 h-100" />
           </a>
-          <a href="">
+          <a href="/">
             <FaFacebook className="w-100 h-100" />
           </a>
-          <a href="">
+          <a href="/">
             <FaTwitter className="w-100 h-100" />
           </a>
-          <a href="">
+          <a href="/">
             <FaSkype className="w-100 h-100" />
           </a>
         </div>

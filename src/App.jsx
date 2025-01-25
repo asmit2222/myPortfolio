@@ -12,22 +12,35 @@ import Testemonial from "./components/Testemonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio/Portfolio";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ServiceDetail from "./components/ServiceDetail";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Stats />
-      <Skills />
-      <Resume />
-      <Portfolio />
-      <Services />
-      <Testemonial />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <Navbar />
+              <Home />
+              <About />
+              <Stats />
+              <Skills />
+              <Resume />
+              <Portfolio />
+              <Services />
+              <Testemonial />
+              <Contact />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route path="/services" element={<ServiceDetail />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

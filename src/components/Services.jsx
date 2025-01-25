@@ -4,8 +4,13 @@ import { BsCardChecklist } from "react-icons/bs";
 import { MdBarChart, MdBrightness5 } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate, Link } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/services");
+  };
   return (
     <section id="services" className="services section" data-aos="fade-up">
       <div className="services-cont">
@@ -26,7 +31,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Lorem Ipsum
                 </a>
               </h4>
@@ -43,7 +48,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Dolor Sitema
                 </a>
               </h4>
@@ -60,7 +65,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Sed ut perspiciatis
                 </a>
               </h4>
@@ -77,7 +82,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Magni Dolores
                 </a>
               </h4>
@@ -94,7 +99,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Nemo Enim
                 </a>
               </h4>
@@ -110,7 +115,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="title">
-                <a href="service-details.html" className=" ">
+                <a onClick={() => handleClick()} className=" ">
                   Eiusmod Tempor
                 </a>
               </h4>
